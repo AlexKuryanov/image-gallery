@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brooklyn Public Library</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page-body">
     <header class="page-header">
-      <nav class="page-nav nav">
-        <a class="page-logo" href="">
+      <nav class="page-nav nav container">
+        <a class="page-logo">
           <h1 class="page-title">Brooklyn Public Library</h1>
         </a>
         <ul class="nav-list">
@@ -29,15 +31,19 @@
             <a class="nav-link" href="#cards">Library Card</a>
           </li>
         </ul>
+        <a class="login" href="#">
+          <img src="assets/images/icons/icon_profile.svg" alt="" />
+        </a>
       </nav>
-      <a class="login" href="#">
-        <img src="assets/images/icons/icon_profile.svg" alt="" />
-      </a>
     </header>
     <main class="page-content">
       <section class="section welcome">
         <div class="container welcome-container">
-          <h2 class="section-title">Welcome to the Brooklyn Library</h2>
+          <h2 class="section-title welcome-title">
+            Welcome <br />
+            to the Brooklyn <br />
+            Library
+          </h2>
         </div>
       </section>
       <section class="section about" id="about">
