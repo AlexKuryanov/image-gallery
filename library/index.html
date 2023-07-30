@@ -1,9 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brooklyn Public Library</title>
   </head>
-  <body></body>
+
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-nav nav">
+        <a class="page-logo" href="">
+          <h1 class="page-title">Brooklyn Public Library</h1>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#favorites">Favorites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop">Coffee shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cards">Library Card</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="login" href="#">
+        <img src="assets/images/icons/icon_profile.svg" alt="" />
+      </a>
+    </header>
+    <main class="page-content">
+      <section class="section welcome">
+        <div class="container welcome-container">
+          <h2 class="section-title">Welcome to the Brooklyn Library</h2>
+        </div>
+      </section>
+      <section class="section about" id="about">
+        <div class="container about-container">
+          <h2 class="section-title">About</h2>
+          <p class="about-intro">
+            The Brooklyn Library is a free workspace, a large number of books
+            and a cozy coffee shop inside
+          </p>
+          <div class="slider">
+            <div class="slide">
+              <img src="assets/images/content/slide1.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/content/slide2.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/content/slide3.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <input
+                class="slider-nav-button"
+                type="radio"
+                name="s"
+                id="s-1"
+                checked
+              />
+              <input class="slider-nav-button" type="radio" name="s" id="s-2" />
+              <input class="slider-nav-button" type="radio" name="s" id="s-3" />
+              <label class="slider-nav-item checked" for="s-1"
+                >Первый слайд</label
+              >
+              <label class="slider-nav-item" for="s-2">Второй слайд</label>
+              <label class="slider-nav-item" for="s-3">Третий слайд</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section favorites" id="favorites">
+        <div class="container favorites-container">
+          <h2 class="section-title">Favorites</h2>
+          <p class="favorites-intro">Pick favorites of season</p>
+          <div class="buttons">
+            <button
+              class="btn favorites-btn"
+              data-season="winter"
+              data-i18="winter"
+            >
+              Winter
+            </button>
+            <button
+              class="btn favorites-btn"
+              data-season="spring"
+              data-i18="spring"
+            >
+              Spring
+            </button>
+            <button
+              class="btn favorites-btn"
+              data-season="summer"
+              data-i18="summer"
+            >
+              Summer
+            </button>
+            <button
+              class="btn favorites-btn active-btn"
+              data-season="autumn"
+              data-i18="autumn"
+            >
+              Autumn
+            </button>
+          </div>
+          <div class="articles">
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">The Book Eaters</p>
+              <p class="book-author">By Sunyi Dean</p>
+              <p class="book-desc">
+                An unusual sci-fi story about a book eater woman who tries
+                desperately to save her dangerous mind-eater son from tradition
+                and certain death. Complete with dysfunctional family values,
+                light Sapphic romance, and a strong, complex protagonist. Not
+                for the faint of heart.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img class="book-img" src="assets/images/content/" alt="" />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Cackle</p>
+              <p class="book-author">By Rachel Harrison</p>
+              <p class="book-desc">
+                Are your Halloween movies of choice The Witches of Eastwick and
+                Practical Magic? Look no further than here - where a woman
+                recovering from a breakup moves to a quaint town in upstate New
+                York and befriends a beautiful witch.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img class="book-img" src="assets/images/content/" alt="" />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Dante: Poet of the Secular World</p>
+              <p class="book-author">By Erich Auerbach</p>
+              <p class="book-desc">
+                Auerbach's engaging book places the 'Comedy' within the
+                tradition of epic, tragedy, and philosophy in general, arguing
+                for Dante's uniqueness as one who raised the individual and his
+                drama of soul into something of divine significance—an inspired
+                introduction to Dante's main themes.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img class="book-img" src="assets/images/content/" alt="" />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">The Last Queen</p>
+              <p class="book-author">By Clive Irving</p>
+              <p class="book-desc">
+                A timely and revelatory new biography of Queen Elizabeth (and
+                her family) exploring how the Windsors have evolved and thrived
+                as the modern world has changed around them.
+              </p>
+              <button class="btn book-bth">Own</button>
+              <img class="book-img" src="assets/images/content/" alt="" />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section shop" id="shop">
+        <div class="container shop-container">
+          <h2 class="section-title">Coffee shop</h2>
+          <p class="shop-intro">
+            In our library, we have of cozy coffee shop, welcoming in customers
+            with frothy cappuccinos and friendly conversation. you can get a
+            favorite book and read in coffee shop. Our barista to cook you best
+            coffee, and also you can try desserts from bakery.
+          </p>
+          <div class="shop-menu">
+            <div class="drinks">
+              <h3 class="menu-title">Coffee & Tea</h3>
+              <div class="drink">
+                <span class="drink-name">Cold Brew Coffee</span
+                ><span class="drink-price">$3</span>
+              </div>
+              <div class="drink">
+                <span class="drink-name">French Press Pot</span
+                ><span class="drink-price">$5</span>
+              </div>
+              <div class="drink">
+                <span class="drink-name">Espresso</span
+                ><span class="drink-price">$2</span>
+              </div>
+              <div class="drink">
+                <span class="drink-name">Cappuccino</span
+                ><span class="drink-price">$4</span>
+              </div>
+              <div class="drink">
+                <span class="drink-name">Hot tea</span
+                ><span class="drink-price">$2</span>
+              </div>
+              <div class="drink">
+                <span class="drink-name">Cold tea</span
+                ><span class="drink-price">$2</span>
+              </div>
+            </div>
+            <div class="desserts">
+              <h3 class="menu-title">Desserts & Cakes</h3>
+              <div class="dessert">
+                <span class="dessert-name">Forest Gateau</span
+                ><span class="dessert-price">$16</span>
+              </div>
+              <div class="dessert">
+                <span class="dessert-name">Blue Moon</span
+                ><span class="dessert-price">$16</span>
+              </div>
+              <div class="dessert">
+                <span class="dessert-name">Truffle Cake</span
+                ><span class="dessert-price">$15</span>
+              </div>
+              <div class="dessert">
+                <span class="dessert-name">Chocolate Cake</span
+                ><span class="dessert-price">$18</span>
+              </div>
+              <div class="dessert">
+                <span class="dessert-name">Poet's Dream Cake</span
+                ><span class="dessert-price">$16</span>
+              </div>
+              <div class="dessert">
+                <span class="dessert-name">Pineapple Cake</span
+                ><span class="dessert-price">$14</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contacts" id="contacts">
+        <div class="container contacts-container">
+          <h2 class="section-title">Our Contacts</h2>
+          <div class="contacts-wrapper">
+            <div class="contacts-info">
+              <h3 class="contacts-info-title">For all Library inquiries:</h3>
+              <p class="contacts-phone">
+                Please call <a href="tel:+6177302370">(617) 730-2370</a>
+              </p>
+              <p class="contacts-phone">
+                For TTY service, please call<a href="tel:+6177302370"
+                  >(617) 730-2370</a
+                >
+              </p>
+              <p class="contacts-phone">
+                Putterham Library: <a href="tel:+6177302385">(617) 730-2385</a>
+              </p>
+              <h3 class="contacts-title">Senior Staff</h3>
+              <p class="contacts-person">
+                Library Director: <span class="bold">Amanda Hirst</span>
+              </p>
+            </div>
+            <div class="contacts-map">
+              <img src="assets/images/content/contacts-map.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section cards" id="cards">
+        <div class="container cards-container">
+          <h2 class="section-title">Digital Library Cards</h2>
+          <div class="cards-search">
+            <h3 class="search-title">Find your Library card</h3>
+            <form action="">
+              <h4 class="form-title">Brooklyn Public Library</h4>
+              <input type="text" placeholder="Reader's name " />
+              <input type="text" placeholder="Card number" />
+              <button class="btn" type="submit">Check the card</button>
+            </form>
+          </div>
+          <div class="cards-toget">
+            <h3 class="toget-title">Get a reader card</h3>
+            <p>
+              You will be able to see a reader card after logging into account
+              or you can register a new account
+            </p>
+            <button>Sign Up</button>
+            <button>Log in</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container footer-container">
+        <div class="foter-top">
+          <div class="address">
+            286 Cadman Plaza, New York, NY 11238, United States
+          </div>
+          <ul class="socials-list">
+            <li class="socials-item"><a class="socials-link" href=""></a></li>
+            <li class="socials-item"><a class="socials-link" href=""></a></li>
+            <li class="socials-item"><a class="socials-link" href=""></a></li>
+          </ul>
+          <div class="schedule">
+            <p>Mon - Fri 08:00 am - 07:00 pm</p>
+            <p>Sat - Sun 10:00 am - 06:00 pm</p>
+          </div>
+        </div>
+        <div class="foter-bottom">
+          <p class="year">2023</p>
+          <p class="school">
+            <a href="https://rs.school/js-stage0/ "
+              >The Rolling Scopes School</a
+            >
+          </p>
+          <p class="github">
+            <a href="https://github.com/AlexKuryanov">AlexKuryanov</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
