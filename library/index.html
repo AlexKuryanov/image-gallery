@@ -73,11 +73,9 @@
               />
               <input class="slider-nav-button" type="radio" name="s" id="s-2" />
               <input class="slider-nav-button" type="radio" name="s" id="s-3" />
-              <label class="slider-nav-item checked" for="s-1"
-                >Первый слайд</label
-              >
-              <label class="slider-nav-item" for="s-2">Второй слайд</label>
-              <label class="slider-nav-item" for="s-3">Третий слайд</label>
+              <label class="slider-nav-item s-1" for="s-1"> </label>
+              <label class="slider-nav-item s-2" for="s-2"> </label>
+              <label class="slider-nav-item s-3" for="s-3"> </label>
             </div>
           </div>
         </div>
@@ -87,34 +85,42 @@
           <h2 class="section-title">Favorites</h2>
           <p class="favorites-intro">Pick favorites of season</p>
           <div class="buttons">
-            <button
+            <input
+              class="btn favorites-btn"
+              type="radio"
+              name="season"
+              id="winter"
+              checked
+            />
+            <label class="label favorites-label" for="winter">Winter</label>
+            <input
+              class="btn favorites-btn"
+              type="radio"
+              name="season"
+              id="spring"
+            />
+            <label class="label favorites-label" for="spring">Spring</label>
+            <input
+              class="btn favorites-btn"
+              type="radio"
+              name="season"
+              id="summer"
+            />
+            <label class="label favorites-label" for="summer">Summer</label>
+            <input
+              class="btn favorites-btn"
+              type="radio"
+              name="season"
+              id="autumn"
+            />
+            <label class="label favorites-label" for="autumn">Autumn</label>
+            <!-- <button
               class="btn favorites-btn"
               data-season="winter"
               data-i18="winter"
             >
               Winter
-            </button>
-            <button
-              class="btn favorites-btn"
-              data-season="spring"
-              data-i18="spring"
-            >
-              Spring
-            </button>
-            <button
-              class="btn favorites-btn"
-              data-season="summer"
-              data-i18="summer"
-            >
-              Summer
-            </button>
-            <button
-              class="btn favorites-btn active-btn"
-              data-season="autumn"
-              data-i18="autumn"
-            >
-              Autumn
-            </button>
+            </button>-->
           </div>
           <div class="articles">
             <article class="favorites-article">
@@ -128,8 +134,12 @@
                 light Sapphic romance, and a strong, complex protagonist. Not
                 for the faint of heart.
               </p>
-              <button class="btn book-bth">Buy</button>
-              <img class="book-img" src="assets/images/content/" alt="" />
+              <button class="btn book-btn">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-w1.jpg"
+                alt="The Book Eaters"
+              />
             </article>
             <article class="favorites-article">
               <h2 class="article-title">Staff Picks</h2>
@@ -141,8 +151,12 @@
                 recovering from a breakup moves to a quaint town in upstate New
                 York and befriends a beautiful witch.
               </p>
-              <button class="btn book-bth">Buy</button>
-              <img class="book-img" src="assets/images/content/" alt="" />
+              <button class="btn book-btn">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-w2.jpg"
+                alt="Cackle"
+              />
             </article>
             <article class="favorites-article">
               <h2 class="article-title">Staff Picks</h2>
@@ -155,8 +169,12 @@
                 drama of soul into something of divine significance—an inspired
                 introduction to Dante's main themes.
               </p>
-              <button class="btn book-bth">Buy</button>
-              <img class="book-img" src="assets/images/content/" alt="" />
+              <button class="btn book-btn">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-w3.jpg"
+                alt="Dante: Poet of the Secular World"
+              />
             </article>
             <article class="favorites-article">
               <h2 class="article-title">Staff Picks</h2>
@@ -167,8 +185,217 @@
                 her family) exploring how the Windsors have evolved and thrived
                 as the modern world has changed around them.
               </p>
+              <button class="btn book-btn" disabled>Own</button>
+
+              <img
+                class="book-img"
+                src="assets/images/content/book-w4.jpg"
+                alt="The Last Queen"
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">The Body</p>
+              <p class="book-author">By Stephen King</p>
+              <p class="book-desc">
+                Powerful novel that takes you back to a nostalgic time,
+                exploring both the beauty and danger and loss of innocence that
+                is youth.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sp1.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">
+                Carry: A Memoir of Survival on Stolen Land
+              </p>
+              <p class="book-author">By Toni Jenson</p>
+              <p class="book-desc">
+                This memoir about the author's relationship with gun violence
+                feels both expansive and intimate, resulting in a lyrical
+                indictment of the way things are.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sp2.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Days of Distraction</p>
+              <p class="book-author">By Alexandra Chang</p>
+              <p class="book-desc">
+                A sardonic view of Silicon Valley culture, a meditation on race,
+                and a journal of displacement and belonging, all in one
+                form-defying package of spare prose.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sp3.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Dominicana</p>
+              <p class="book-author">By Angie Cruz</p>
+              <p class="book-desc">
+                A fascinating story of a teenage girl who marries a man twice
+                her age with the promise to bring her to America. Her marriage
+                is an opportunity for her family to eventually immigrate. For
+                fans of Isabel Allende and Julia Alvarez.
+              </p>
               <button class="btn book-bth">Own</button>
-              <img class="book-img" src="assets/images/content/" alt="" />
+              <img
+                class="book-img"
+                src="assets/images/content/book-sp4.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Crude: A Memoir</p>
+              <p class="book-author">
+                By Pablo Fajardo & ​​Sophie Tardy-Joubert
+              </p>
+              <p class="book-desc">
+                Drawing and color by Damien Roudeau | This book illustrates the
+                struggles of a group of indigenous Ecuadoreans as they try to
+                sue the ChevronTexaco company for damage their oil fields did to
+                the Amazon and her people
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sm1.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Let My People Go Surfing</p>
+              <p class="book-author">By Yvon Chouinard</p>
+              <p class="book-desc">
+                Chouinard—climber, businessman, environmentalist—shares tales of
+                courage and persistence from his experience of founding and
+                leading Patagonia, Inc. Full title: Let My People Go Surfing:
+                The Education of a Reluctant Businessman, Including 10 More
+                Years of Business Unusual.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sm2.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">The Octopus Museum: Poems</p>
+              <p class="book-author">By Brenda Shaughnessy</p>
+              <p class="book-desc">
+                This collection of bold and scathingly beautiful feminist poems
+                imagines what comes after our current age of environmental
+                destruction, racism, sexism, and divisive politics.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sm3.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Shark Dialogues: A Novel</p>
+              <p class="book-author">By Kiana Davenport</p>
+              <p class="book-desc">
+                An epic saga of seven generations of one family encompasses the
+                tumultuous history of Hawaii as a Hawaiian woman gathers her
+                four granddaughters together in an erotic tale of villains and
+                dreamers, queens and revolutionaries, lepers and healers.
+              </p>
+              <button class="btn book-bth">Own</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-sm4.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Casual Conversation</p>
+              <p class="book-author">By Renia White</p>
+              <p class="book-desc">
+                White's impressive debut collection takes readers through and
+                beyond the concepts of conversation and the casual - both what
+                we say to each other and what we don't, examining the
+                possibilities around how we construct and communicate identity.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-au1.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">The Great Fire</p>
+              <p class="book-author">By Lou Ureneck</p>
+              <p class="book-desc">
+                The harrowing story of an ordinary American and a principled
+                Naval officer who, horrified by the burning of Smyrna, led an
+                extraordinary rescue effort that saved a quarter of a million
+                refugees from the Armenian Genocide.
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-au2.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Rickey: The Life and Legend</p>
+              <p class="book-author">By Howard Bryant</p>
+              <p class="book-desc">
+                With the fall rolling around, one can't help but think of
+                baseball's postseason coming up! And what better way to prepare
+                for it than reading the biography of one of the game's all-time
+                greatest performers, the Man of Steal, Rickey Henderson?
+              </p>
+              <button class="btn book-bth">Buy</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-au3.jpg"
+                alt=""
+              />
+            </article>
+            <article class="favorites-article">
+              <h2 class="article-title">Staff Picks</h2>
+              <p class="book-title">Slug: And Other Stories</p>
+              <p class="book-author">By Megan Milks</p>
+              <p class="book-desc">
+                Exes Tegan and Sara find themselves chained together by
+                hairballs of codependency. A father and child experience the
+                shared trauma of giving birth to gods from their wounds.
+              </p>
+              <button class="btn book-bth">Own</button>
+              <img
+                class="book-img"
+                src="assets/images/content/book-au4.jpg"
+                alt=""
+              />
             </article>
           </div>
         </div>
@@ -178,7 +405,7 @@
           <h2 class="section-title">Coffee shop</h2>
           <p class="shop-intro">
             In our library, we have of cozy coffee shop, welcoming in customers
-            with frothy cappuccinos and friendly conversation. you can get a
+            with frothy cappuccinos and friendly conversation. You can get a
             favorite book and read in coffee shop. Our barista to cook you best
             coffee, and also you can try desserts from bakery.
           </p>
@@ -186,55 +413,67 @@
             <div class="drinks">
               <h3 class="menu-title">Coffee & Tea</h3>
               <div class="drink">
-                <span class="drink-name">Cold Brew Coffee</span
-                ><span class="drink-price">$3</span>
+                <span class="drink-name">Cold Brew Coffee</span>
+                <span class="line"></span>
+                <span class="drink-price">$3</span>
               </div>
               <div class="drink">
-                <span class="drink-name">French Press Pot</span
-                ><span class="drink-price">$5</span>
+                <span class="drink-name">French Press Pot</span>
+                <span class="line"></span>
+                <span class="drink-price">$5</span>
               </div>
               <div class="drink">
-                <span class="drink-name">Espresso</span
-                ><span class="drink-price">$2</span>
+                <span class="drink-name">Espresso</span>
+                <span class="line"></span>
+                <span class="drink-price">$2</span>
               </div>
               <div class="drink">
-                <span class="drink-name">Cappuccino</span
-                ><span class="drink-price">$4</span>
+                <span class="drink-name">Cappuccino</span>
+                <span class="line"></span>
+                <span class="drink-price">$4</span>
               </div>
               <div class="drink">
-                <span class="drink-name">Hot tea</span
-                ><span class="drink-price">$2</span>
+                <span class="drink-name">Hot tea</span>
+                <span class="line"></span>
+                <span class="drink-price">$2</span>
               </div>
               <div class="drink">
-                <span class="drink-name">Cold tea</span
-                ><span class="drink-price">$2</span>
+                <span class="drink-name">Cold tea</span>
+                <span class="line"></span>
+                <span class="drink-price">$2</span>
               </div>
             </div>
             <div class="desserts">
               <h3 class="menu-title">Desserts & Cakes</h3>
               <div class="dessert">
-                <span class="dessert-name">Forest Gateau</span
-                ><span class="dessert-price">$16</span>
+                <span class="dessert-name">Forest Gateau</span>
+                <span class="line"></span>
+                <span class="dessert-price">$16</span>
               </div>
               <div class="dessert">
-                <span class="dessert-name">Blue Moon</span
-                ><span class="dessert-price">$16</span>
+                <span class="dessert-name">Blue Moon</span>
+                <span class="line"></span>
+                <span class="dessert-price">$16</span>
               </div>
               <div class="dessert">
-                <span class="dessert-name">Truffle Cake</span
-                ><span class="dessert-price">$15</span>
+                <span class="dessert-name">Truffle Cake</span>
+                <span class="line"></span>
+                <span class="dessert-price">$15</span>
               </div>
               <div class="dessert">
-                <span class="dessert-name">Chocolate Cake</span
-                ><span class="dessert-price">$18</span>
+                <span class="dessert-name">Chocolate Cake</span>
+                <span class="line"></span>
+                <span class="dessert-price">$18</span>
               </div>
               <div class="dessert">
-                <span class="dessert-name">Poet's Dream Cake</span
-                ><span class="dessert-price">$16</span>
+                <span class="dessert-name">Poet's Dream Cake</span>
+                <span class="line"></span>
+                <span class="dessert-price">$16</span>
               </div>
               <div class="dessert">
-                <span class="dessert-name">Pineapple Cake</span
-                ><span class="dessert-price">$14</span>
+                <span class="dessert-name">Pineapple Cake</span>
+                <span class="line"></span>
+                <span class="dessert-price">$14</span>
               </div>
             </div>
           </div>
@@ -247,19 +486,31 @@
             <div class="contacts-info">
               <h3 class="contacts-info-title">For all Library inquiries:</h3>
               <p class="contacts-phone">
-                Please call <a href="tel:+6177302370">(617) 730-2370</a>
-              </p>
-              <p class="contacts-phone">
-                For TTY service, please call<a href="tel:+6177302370"
+                Please call
+                <a class="contacts-link" href="tel:+6177302370"
                   >(617) 730-2370</a
                 >
               </p>
               <p class="contacts-phone">
-                Putterham Library: <a href="tel:+6177302385">(617) 730-2385</a>
+                For TTY service, please call
+                <a class="contacts-link" href="tel:+6177302370"
+                  >(617) 730-2370</a
+                >
               </p>
-              <h3 class="contacts-title">Senior Staff</h3>
+              <p class="contacts-phone">
+                Putterham Library:
+                <a class="contacts-link" href="tel:+6177302385"
+                  >(617) 730-2385</a
+                >
+              </p>
+              <h3 class="contacts-dir-title">Senior Staff</h3>
               <p class="contacts-person">
-                Library Director: <span class="bold">Amanda Hirst</span>
+                Library Director:
+                <a
+                  class="contacts-link contacts-emai-link"
+                  href="mailto:amanda.hirst@gmail.com"
+                  ><span class="bold">Amanda Hirst</span></a
+                >
               </p>
             </div>
             <div class="contacts-map">
@@ -271,52 +522,109 @@
       <section class="section cards" id="cards">
         <div class="container cards-container">
           <h2 class="section-title">Digital Library Cards</h2>
-          <div class="cards-search">
-            <h3 class="search-title">Find your Library card</h3>
-            <form action="">
-              <h4 class="form-title">Brooklyn Public Library</h4>
-              <input type="text" placeholder="Reader's name " />
-              <input type="text" placeholder="Card number" />
-              <button class="btn" type="submit">Check the card</button>
-            </form>
-          </div>
-          <div class="cards-toget">
-            <h3 class="toget-title">Get a reader card</h3>
-            <p>
-              You will be able to see a reader card after logging into account
-              or you can register a new account
-            </p>
-            <button>Sign Up</button>
-            <button>Log in</button>
+          <div class="cards-wrapper">
+            <div class="cards-search">
+              <h3 class="search-title">Find your Library card</h3>
+              <form class="cards-form">
+                <div class="form-wrapper">
+                  <h4 class="form-title">Brooklyn Public Library</h4>
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Reader's name "
+                  />
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Card number"
+                  />
+                </div>
+                <button class="btn search-btn" type="submit">
+                  Check the card
+                </button>
+              </form>
+            </div>
+            <div class="cards-toget">
+              <h3 class="toget-title">Get a reader card</h3>
+              <p class="toget-text">
+                You will be able to see a reader card after logging into account
+                or you can register a new account
+              </p>
+              <button class="btn toget-btn">Sign Up</button>
+              <button class="btn toget-btn">Log in</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container footer-container">
-        <div class="foter-top">
-          <div class="address">
-            286 Cadman Plaza, New York, NY 11238, United States
+        <div class="footer-top">
+          <div class="footer-inner">
+            <div class="address">
+              <a
+                class="address-link"
+                href="https://goo.gl/maps/wGibexbjGNScSqar7"
+                target="_blank"
+                >286 Cadman Plaza, New York, NY 11238, United States</a
+              >
+            </div>
+            <ul class="socials-list">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icons/twitter.svg"
+                    alt="twitter-icon"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icons/instagram.svg"
+                    alt="instagram-icon"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icons/facebook.svg"
+                    alt="facebook-icon"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="socials-list">
-            <li class="socials-item"><a class="socials-link" href=""></a></li>
-            <li class="socials-item"><a class="socials-link" href=""></a></li>
-            <li class="socials-item"><a class="socials-link" href=""></a></li>
-          </ul>
           <div class="schedule">
-            <p>Mon - Fri 08:00 am - 07:00 pm</p>
-            <p>Sat - Sun 10:00 am - 06:00 pm</p>
+            <p><span class="weekdays">Mon - Fri</span> 08:00 am - 07:00 pm</p>
+            <p><span class="weekend">Sat - Sun</span> 10:00 am - 06:00 pm</p>
           </div>
         </div>
-        <div class="foter-bottom">
+        <hr class="separator" />
+        <div class="footer-bottom">
           <p class="year">2023</p>
           <p class="school">
-            <a href="https://rs.school/js-stage0/ "
+            <a href="https://rs.school/js-stage0/ " target="_blank"
               >The Rolling Scopes School</a
             >
           </p>
           <p class="github">
-            <a href="https://github.com/AlexKuryanov">AlexKuryanov</a>
+            <a href="https://github.com/AlexKuryanov" target="_blank"
+              >AlexKuryanov</a
+            >
           </p>
         </div>
       </div>
