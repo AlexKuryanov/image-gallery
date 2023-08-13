@@ -305,8 +305,7 @@ img {
 }
 
 .favorites-article {
-  max-width: 550px;
-  min-width: 520px;
+  width: 550px;
   margin-right: 40px;
   display: flex;
   flex-direction: column;
