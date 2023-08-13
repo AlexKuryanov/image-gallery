@@ -34,6 +34,11 @@
         <a class="login" href="#">
           <img src="assets/images/icons/icon_profile.svg" alt="" />
         </a>
+        <div class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
       </nav>
     </header>
     <main class="page-content">
@@ -54,29 +59,33 @@
             and a cozy coffee shop inside
           </p>
           <div class="slider">
-            <div class="slide">
-              <img src="assets/images/content/slide1.jpg" alt="" />
+            <button class="slide-btn prev-slide-btn"></button>
+            <div class="slides">
+              <div class="slide">
+                <img src="assets/images/content/slide1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/images/content/slide2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/images/content/slide3.jpg" alt="" />
+              </div>
             </div>
-            <div class="slide">
-              <img src="assets/images/content/slide2.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="assets/images/content/slide3.jpg" alt="" />
-            </div>
-            <div class="slider-nav">
-              <input
-                class="slider-nav-button"
-                type="radio"
-                name="s"
-                id="s-1"
-                checked
-              />
-              <input class="slider-nav-button" type="radio" name="s" id="s-2" />
-              <input class="slider-nav-button" type="radio" name="s" id="s-3" />
-              <label class="slider-nav-item s-1" for="s-1"> </label>
-              <label class="slider-nav-item s-2" for="s-2"> </label>
-              <label class="slider-nav-item s-3" for="s-3"> </label>
-            </div>
+            <button class="slide-btn next-slide-btn"></button>
+          </div>
+          <div class="slider-nav">
+            <input
+              class="slider-nav-button"
+              type="radio"
+              name="s"
+              id="s-1"
+              checked
+            />
+            <input class="slider-nav-button" type="radio" name="s" id="s-2" />
+            <input class="slider-nav-button" type="radio" name="s" id="s-3" />
+            <label class="slider-nav-item s-1" for="s-1"> </label>
+            <label class="slider-nav-item s-2" for="s-2"> </label>
+            <label class="slider-nav-item s-3" for="s-3"> </label>
           </div>
         </div>
       </section>
@@ -85,35 +94,43 @@
           <h2 class="section-title">Favorites</h2>
           <p class="favorites-intro">Pick favorites of season</p>
           <div class="buttons">
-            <input
-              class="btn favorites-btn"
-              type="radio"
-              name="season"
-              id="winter"
-              checked
-            />
-            <label class="label favorites-label" for="winter">Winter</label>
-            <input
-              class="btn favorites-btn"
-              type="radio"
-              name="season"
-              id="spring"
-            />
-            <label class="label favorites-label" for="spring">Spring</label>
-            <input
-              class="btn favorites-btn"
-              type="radio"
-              name="season"
-              id="summer"
-            />
-            <label class="label favorites-label" for="summer">Summer</label>
-            <input
-              class="btn favorites-btn"
-              type="radio"
-              name="season"
-              id="autumn"
-            />
-            <label class="label favorites-label" for="autumn">Autumn</label>
+            <label class="label favorites-label" for="winter"
+              ><input
+                class="btn favorites-btn"
+                type="radio"
+                name="season"
+                id="winter"
+                checked
+              />
+              Winter</label
+            >
+            <label class="label favorites-label" for="spring"
+              ><input
+                class="btn favorites-btn"
+                type="radio"
+                name="season"
+                id="spring"
+              />
+              Spring</label
+            >
+            <label class="label favorites-label" for="summer"
+              ><input
+                class="btn favorites-btn"
+                type="radio"
+                name="season"
+                id="summer"
+              />
+              Summer</label
+            >
+            <label class="label favorites-label" for="autumn"
+              ><input
+                class="btn favorites-btn"
+                type="radio"
+                name="season"
+                id="autumn"
+              />
+              Autumn</label
+            >
             <!-- <button
               class="btn favorites-btn"
               data-season="winter"
