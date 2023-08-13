@@ -103,7 +103,7 @@ img {
 }
 
 .burger {
-  /* display: none; */
+  display: none;
   width: 45px;
   height: 20px;
   position: relative;
@@ -121,7 +121,6 @@ img {
 
 .burger-line:nth-child(2) {
   top: 50%;
-  /* transform: translateY(-50%); */
 }
 
 .burger-line:last-child {
@@ -702,6 +701,10 @@ img {
   .login {
     margin-left: auto;
     margin-right: 40px;
+  }
+
+  .burger {
+    display: block;
   }
 
   .slider {
