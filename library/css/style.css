@@ -108,7 +108,7 @@ img {
 .burger {
   display: none;
   width: 45px;
-  height: 20px;
+  height: 45px;
   position: relative;
   cursor: pointer;
 }
@@ -122,12 +122,16 @@ img {
   transition: all 0.3s linear;
 }
 
+.burger-line:first-child {
+  top: 10px;
+}
+
 .burger-line:nth-child(2) {
-  top: 50%;
+  top: 48%;
 }
 
 .burger-line:last-child {
-  bottom: -1px;
+  bottom: 13px;
 }
 
 .burger:hover .burger-line {
@@ -770,7 +774,7 @@ img {
     position: absolute;
     top: 126px;
     right: -350px;
-    background-color: var(--black);
+    background-color: var(--basic-black);
     z-index: 2;
     transition: all 0.5s linear;
   }
@@ -798,11 +802,11 @@ img {
   }
 
   .burger.open .burger-line:first-child {
-    transform: translate(-6px, 11px) rotate(45deg);
+    transform: translate(0px, 12px) rotate(45deg);
   }
 
   .burger.open .burger-line:last-child {
-    transform: translate(-6px, -9px) rotate(-45deg);
+    transform: translate(0px, -9px) rotate(-45deg);
   }
 
   .slider {
