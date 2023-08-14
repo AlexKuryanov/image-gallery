@@ -642,7 +642,7 @@ img {
 }
 
 .toget-text {
-  width: 600px;
+  width: 460px;
   margin-bottom: 40px;
   font-size: 20px;
   line-height: 40px;
@@ -752,12 +752,36 @@ img {
 
 /* from 768px to 1024px */
 @media (max-width: 1024px) {
+  .page {
+    overflow-x: hidden;
+  }
+
   .container {
     max-width: 728px;
   }
 
   .nav-list {
-    display: none;
+    flex-direction: column;
+    row-gap: 57px;
+    width: 332px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 126px;
+    right: -350px;
+    background-color: var(--black);
+    z-index: 2;
+    transition: all 0.5s linear;
+  }
+
+  .nav-list.open {
+    right: -2px;
+    z-index: 2;
+  }
+
+  .nav-list.open .nav-item:last-child {
+    margin-right: 30px;
   }
 
   .login {
@@ -767,6 +791,18 @@ img {
 
   .burger {
     display: block;
+  }
+
+  .burger.open .burger-line:nth-child(2) {
+    display: none;
+  }
+
+  .burger.open .burger-line:first-child {
+    transform: translate(-6px, 11px) rotate(45deg);
+  }
+
+  .burger.open .burger-line:last-child {
+    transform: translate(-6px, -9px) rotate(-45deg);
   }
 
   .slider {
@@ -821,5 +857,9 @@ img {
 
   .cards-toget {
     text-align: center;
+  }
+
+  .toget-text {
+    width: 600px;
   }
 }
