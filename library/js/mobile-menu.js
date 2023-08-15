@@ -3,6 +3,7 @@ const mobileMenu = document.querySelector(".nav-list");
 const mobileLinks = document.querySelectorAll(".nav-link");
 
 burger.addEventListener("click", function () {
+  console.log("click!");
   burger.classList.toggle("open");
   mobileMenu.classList.toggle("open");
 });
@@ -17,7 +18,8 @@ mobileLinks.forEach((link) => {
 });
 
 window.addEventListener("click", function (e) {
-  if (e.target !== mobileMenu && e.target !== burger) {
+  console.log(e.target);
+  if (e.target !== mobileMenu && !e.target.closest(".burger")) {
     burger.classList.remove("open");
     mobileMenu.classList.remove("open");
   }
