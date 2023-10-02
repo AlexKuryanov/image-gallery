@@ -1,4 +1,4 @@
-console.log(
+alert(
   "Dear reviewer!\nPlease review my priject a couple of days later, I'm still working on project.\nThank you very much!"
 );
 const url =
