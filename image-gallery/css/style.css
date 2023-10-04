@@ -1,0 +1,134 @@
+body {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: rgb(0, 140, 255);
+}
+
+.visibility-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.page-header {
+  padding-block: 0.5em;
+  border-bottom: 0.2em solid rgb(158, 4, 247);
+}
+
+.page-title {
+  line-height: normal;
+  text-align: center;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.1em 0.8em;
+  border: 0.1em solid rgb(158, 4, 247);
+  border-radius: 1.5em;
+}
+
+.search-input {
+  width: 90%;
+  line-height: 170%;
+  color: inherit;
+  border: 0.1em solid transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.3em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 1.3em;
+  height: 1.3em;
+  fill: rgb(158, 4, 247);
+}
+
+/* Content */
+.page-content {
+  padding-block: 0.5em;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.gallery-img {
+  width: 448px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Footer */
+.page-footer {
+  border-top: 0.2em solid rgb(158, 4, 247);
+}
+
+.github a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.github:hover a {
+  color: rgb(52, 212, 212);
+}
+
+/* Media queries */
+@media (max-width: 850px) {
+  .container {
+    max-width: 810px;
+    justify-content: center;
+    column-gap: 1em;
+  }
+
+  .footer-container * {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+}

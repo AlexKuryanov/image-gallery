@@ -4,27 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container header-container">
         <h1 class="page-title">Image Gallery</h1>
-        <input
-          class="search-input"
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search..."
-          autocomplete="off"
-        />
-        <button class="search-btn" type="button"></button>
+        <div class="search-form">
+          <input
+            class="search-input"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <button class="search-btn" type="button">
+            <svg class="icon">
+              <use xlink:href="#search-icon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main class="page-content">
-      <div class="container">
+      <div class="container gallery-container">
         <section class="gallery">
           <h2 class="section-title visibility-hidden">Images</h2>
+          <div class="gallery-wrapper"></div>
         </section>
       </div>
     </main>
@@ -48,5 +60,12 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <svg style="display: none" viewBox="0 0 32 32">
+      <symbol id="search-icon">
+        <path
+          d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>
