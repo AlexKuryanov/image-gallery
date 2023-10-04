@@ -45,7 +45,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 0.1em 0.8em;
   border: 0.1em solid rgb(158, 4, 247);
   border-radius: 1.5em;
@@ -53,6 +52,7 @@ body {
 
 .search-input {
   width: 90%;
+  padding-right: 0.5em;
   line-height: 170%;
   color: inherit;
   border: 0.1em solid transparent;
